@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./menu.html">
+    <title>Menu</title>
+<div class="menu" id="menu">
+    <marquee behavior="alternate" direction="right" scrollamount="8">
+        <h2>You can check our tasty dishes and order,enjoy!</h2>
+    </marquee>
+</head>
+<body>
+    <div class="container">
+        <div class="order">
+            <div id="pizza-menu">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="order1">
+                            <img src="Assets/cheesepizza.jpg" alt="Cheese Pizza" height="300" width="300" class="menu">
+                            <p>Cheese Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order2">
+                            <img src="Assets/buffalopizza.jpg" alt="Buffalo Pizza" height="300" width="300" class="menu">
+                            <p>Buffalo Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order3">
+                            <img src="Assets/BBQchickenpizza.jpg" alt="BBQchickenpizza" height="300" width="300" class="menu">
+                            <p>BBQ Chicken Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="order4">
+                            <img src="Assets/margheritapizza.jpg" alt="Margherita pizza" height="300" width="300" class="menu">
+                            <p>Margherita Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order5">
+                            <img src="Assets/meatpizza.jpg" alt="Meat Pizza" height="300" width="300"    class="menu">
+                            <p>Meat Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order6">
+                            <img src="Assets/pepperonipizza.jpg" alt="pepperonipizza" height="300" width="300" class="menu">
+                            <p>Pepperoni Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="order7">
+                            <img src="Assets/supremepizza.jpg" alt="supremepizza" height="300" width="300" class="menu">
+                            <p>Supreme Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order8">
+                            <img src="Assets/veggiepizza.jpg" alt="veggiepizza" height="300" width="300"         class="menu">
+                            <p>Veggie Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                        <div class="order9">
+                            <img src="Assets/hawaiianpizza.jpg" alt="hawaaiianpizza" height="300" width="300" class="menu">
+                            <p>Hawaaiian Pizza</p>
+                            <button onclick="document.getElementById('id01').style.display='block'" class="btn">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Drinks</a>
+
+		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Burgers</a>
+                     </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center">
+                      
+                      <div class="tab-content ftco-animate" id="v-pills-tabContent">
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+    
+    
+      <!-- Modal Content -->
+      <form action="" id="order" class="modal-content animate">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <h1>Pick Your desired Pizza hut</h1>
+        <div class="form-group">
+            <div class="flavour">
+                <label for="flavour"></label>
+                <select name="flavour" id="flavour" class="form-control">
+                    <option value="1" class="form-control">Cheese Pizza</option>
+                    <option value="2" class="form-control">Margherita Pizza</option>
+                    <option value="3" class="form-control">Supreme Pizza</option>
+                    <option value="4" class="form-control">Buffalo Pizza</option>
+                    <option value="5" class="form-control">Meat Pizza</option>
+                    <option value="6" class="form-control">Veggie Pizza</option>
+                    <option value="7" class="form-control">BBQ Chicken Pizza</option>
+                    <option value="8" class="form-control">Pepperoni Pizza</option>
+                    <option value="9" class="form-control">Hawaaiian Pizza</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="size">
+                <label for="size">Pick size</label>
+                <select name="size" id="size" class="form-control">
+                    <option value="1" class="form-control">None</option>
+                    <option value="2" class="form-control">Small</option>
+                    <option value="3" class="form-control">Medium</option>
+                    <option value="4" class="form-control">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="crust">
+                <label for="crust">Pick type of crust</label>
+                <select name="crust" id="crust" class="form-control">
+                    <option value="" class="form-control">None</option>
+                    <option value="" class="form-control">Stuffed @ 500</option>
+                    <option value="" class="form-control">Gluten-Free @ 300</option>
+                    <option value="" class="form-control">Crispy @ 450</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="toppings">
+                <label for="toppings">Choose toppings</label>
+                <select name="toppings" id="toppings" class="form-control">
+                    <option value="1" class="form-control">None</option>
+                    <option value="2" class="form-control">Potato, sausage & pancetta @ 400</option>
+                    <option value="3" class="form-control">Gorgonzola and mushroom @ 250</option>
+                    <option value="4" class="form-control">Black olives @ 150</option>
+                    <option value="5" class="form-control">Gorgonzola & radicchio @ 270</option>
+                    <option value="6" class="form-control">eggplant & capsicum @ 300</option>
+                    <option value="7" class="form-control">Mixed sliced mushrooms & garlic @ 350</option>
+                    <option value="8" class="form-control">Broccolini & pancetta @ 300</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pizzanumber">Number of Pizzas: </label>
+            <input type="number" name="" id="pizzaNumber" class="form-control" value="1">
+        </div>
+        <div class="form-group">
+                <label for="yes_no_radio">Would You like the pizza to be delivered?</label>
+                <br>
+                <input type="radio" name="yes_no" id="option">Yes</input>
+                <br>
+                    <input type="radio" name="yes_no" id="no" checked>No</input>
+        </div>
+        <button onclick="document.getElementById('order').style.display='block'" type="submit"class="btn" id="make-order" style="color: rgb(84, 240, 17); background-color: rgb(15, 15, 15);">Place Order</button>
+    </div>
+    </form>
+    </div>
+    <div id="confirm" class="modal">
+        <form action="" id="order" class="modal-content animate">
+            <span onclick="document.getElementById('confirm').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+        </form>
+    </div>
+</div>
+
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+</body>
+<script src="../js/jquery-3.5.1.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
+</html>
+
