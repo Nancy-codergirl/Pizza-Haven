@@ -87,7 +87,7 @@
         <h1>Time To Make Your Order</h1>
         <div class="form-group">
             <div class="flavour">
-                <label for="flavour"></label>
+                <label for="type">Flavour</label>
                 <select name="flavour" id="flavour" class="form-control">
                     <option value="1" class="form-control">Cheese Pizza</option>
                     <option value="2" class="form-control">Margherita Pizza</option>
@@ -106,9 +106,9 @@
                 <label for="size">Pick size</label>
                 <select name="size" id="size" class="form-control">
                     <option value="1" class="form-control">None</option>
-                    <option value="2" class="form-control">Small</option>
-                    <option value="3" class="form-control">Medium</option>
-                    <option value="4" class="form-control">Large</option>
+                    <option value="2" class="form-control">Small---600</option>
+                    <option value="3" class="form-control">Medium---800</option>
+                    <option value="4" class="form-control">Large---1200</option>
                 </select>
             </div>
         </div>
@@ -143,11 +143,17 @@
             <input type="number" name="" id="pizzaNumber" class="form-control" value="1">
         </div>
         <div class="form-group">
-                <label for="yes_no_radio">Would You like the pizza to be delivered?</label>
-                <br>
-                <input type="radio" name="yes_no" id="option">Yes</input>
-                <br>
-                    <input type="radio" name="yes_no" id="no" checked>No</input>
+            <label for="sel1">Delivery option:</label>
+            <select class="form-control" id="pick">
+                <option value="1">Self pick up</option>
+                <option value="2">Delivered---150ksh</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary peporoni-btn" data-bs-toggle="modal" data-bs-target="#summary">
+                  Place Order
+                </button>
+        </div>
         </div>
         <button onclick="document.getElementById('order').style.display='block'" type="submit"class="btn" id="make-order" style="color: rgb(84, 240, 17); background-color: rgb(15, 15, 15);">Place Order</button>
     </div>
