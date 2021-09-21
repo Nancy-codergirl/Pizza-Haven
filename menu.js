@@ -1,12 +1,11 @@
 /*business logic*/
-
 function Order(type, size, crust, topping) {
     this.type = type;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
 }
-Order.prototype.fullOrder = function () {
+Order.prototype.fullOrder = function() {
     return this.type + " with the crust of " + this.crust + " and " + this.toppings + " as topping.";
 };
 
@@ -16,14 +15,14 @@ function Total(price, quantity, delivery) {
     this.delivery = delivery;
 }
 
-Total.prototype.finalTotal = function () {
+Total.prototype.finalTotal = function() {
     return this.price * this.quantity + this.delivery;
 };
 var sizePrice = [1200, 800, 600]
 var deliverPrices = [0, 150];
 //user interface logic
-$(document).ready(function () {
-    $('form#myForm').submit(function (event) {
+$(document).ready(function() {
+    $('form#myForm').submit(function(event) {
         event.preventDefault();
         var pizzaType = $('#type').val();
 
@@ -44,11 +43,11 @@ $(document).ready(function () {
 
         newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
         newTotal = new Total(price, pizzaQty, DeliveryCost);
-        if (pizzaPick===1){
-        alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
-        alert("your bill is: " + newTotal.finalTotal());
-        }else{
-            if(pizzaPick===2){
+        if (pizzaPick === 1) {
+            alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
+            alert("your bill is: " + newTotal.finalTotal());
+        } else {
+            if (pizzaPick === 2) {
                 prompt("Enter where you want your pizza to be delivered");
                 alert("Your order has been received and it will be delivered. Continue to see your order details");
                 alert("Your oder is: " + newOrder.fullOrder() + ".continue to see your total bill");
@@ -56,4 +55,5 @@ $(document).ready(function () {
             }
         }
 
-        });});
+    });
+});
