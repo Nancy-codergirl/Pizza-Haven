@@ -93,3 +93,7 @@ option{
   #show-location{
       display: none;
   }
+  *{
+   margin: 0;
+   padding: 0;  
+  }

@@ -36,11 +36,3 @@ $('.card3').hover(function () {
     $(this).css("opacity", "1");
     $('.p2').addClass('text');
 });
-/*business logic*/
-
-function Order(type, size, crust, topping) {
-    this.type = type;
-    this.size = size;
-    this.crust = crust;
-    this.topping = topping;
-}

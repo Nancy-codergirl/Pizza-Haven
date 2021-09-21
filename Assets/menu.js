@@ -4,10 +4,10 @@ function Order(type, size, crust, topping) {
     this.type = type;
     this.size = size;
     this.crust = crust;
-    this.toppings = toppings;
+    this.topping = topping;
 }
 Order.prototype.fullOrder = function () {
-    return this.type + " with the crust of " + this.crust + " and " + this.toppings + " as topping.";
+    return this.type + " with the crust of " + this.crust + " and " + this.topping + " as topping.";
 };
 
 function Total(price, quantity, delivery) {
@@ -19,8 +19,8 @@ function Total(price, quantity, delivery) {
 Total.prototype.finalTotal = function () {
     return this.price * this.quantity + this.delivery;
 };
-var sizePrice = [1200, 800, 600]
-var deliverPrices = [0, 150];
+var sizePrice = [1200, 900, 600]
+var deliverPrices = [0, 200];
 //user interface logic
 $(document).ready(function () {
     $('form#myForm').submit(function (event) {
@@ -45,7 +45,7 @@ $(document).ready(function () {
         newOrder = new Order(pizzaType, pizzaSize, pizzaCrust, pizzaTop);
         newTotal = new Total(price, pizzaQty, DeliveryCost);
         if (pizzaPick===1){
-        alert("Your order is: " + newOrder.fullOrder() + ".continue to see your total bill");
+        alert("Your oder is: " + newOrder.fullOrder() + ".continue to see your total bill");
         alert("your bill is: " + newTotal.finalTotal());
         }else{
             if(pizzaPick===2){
@@ -56,4 +56,4 @@ $(document).ready(function () {
             }
         }
 
-        })
+    });
