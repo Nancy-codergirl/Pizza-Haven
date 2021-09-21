@@ -3,7 +3,7 @@ A pizza place meant for serving customers with different sizes of pizza where cl
 The clients can also do self-pickup.
 
  ## The live link to my site is
- *
+ * https://nancy-codergirl.github.io/Pizza-Haven/
   
 ## Project Setup Instructions
 * Clone the repository and modify the content of index.html according to your requirement.
